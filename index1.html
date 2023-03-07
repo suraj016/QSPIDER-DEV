@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+               <!-- 6 MARCH 2023 -->
+
+               <!-- table>(tr>td*3) -->
+
+               HTML  TABLE
+               <!-- it is collection of rows and coulumn
+               table is grid organised in rows and coloumn
+               to create table in html we have table tag <table></table>
+               the table we want to create we have to write within table tag
+               here we are creating table row by rowsto create table row we have tr tag
+               * to create cells in html we have two tags
+               1. th tag - it is used to create coloumn heading cells
+               2. td tag - it is used to create data cells
+               to provide title or cption to the table we have caption tag <caption>EMPLOYE</caption>
+               the title of the table we have write within caption tag
+               caption tag we have write within table tag -->
+
+
+               <!-- // ROWSPAN AND COLSPAN -->
+
+               <!-- CELL SPANNING , span = extend
+
+               ROWSPAN
+                in html we have two ways to span the cells
+               1. row span = Rowspan = "No of cell span" -> value in digits
+               2. It is an attribute used to span the cells on row basis 
+
+               COLSPAN
+               1. Colspan is an attribute used to span the cell on coloumn basis
+               *note - Rowspan and colspan attribute we can only used with th and td tag
+                     - we can together use rowspan and colspan attribute
+
+                     ATTRIBUTES OF TABLE TAG
+
+                1. Cell spacing
+                - the space around the cell is know as cellspacing (cellspacing= "value" -> digit)
+                2. Cell padding 
+                - the space between cell border and cell content is know as cell padding  (cellpadding = "value" -> digit) -->
+
+
+                thead tag - it represent top most part of our table 
+                the coloumn heading we hav eto write within thead tag
+
+                tbody - remaiing content our table we have write within tbody tag
+
+                tfoot tag - it represents bottom most part of our table 
+                the conclusion or summary we have write within tfoot tag
+         
+                note - thead,tbody,tfoot - highly recommended to use inside table, for better explanation and crawler understanding purpose
+
+
+
+               <table border="1px solid black"  align="center">
+                <caption>EMPLOYEE table</caption>
+                <tr>
+                    <td>Empid</td>
+                    <td>Ename</td>
+                    <td>Salary</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>shivam</td>
+                    <td rowspan="2">100000</td>
+                </tr>
+
+                <tr>
+                    <td>102</td>
+                    <td>rahul</td>
+                    <!-- <td>100000</td> -->
+                </tr>
+
+                <tr>
+                    <td>103</td>
+                    <td>ramesh</td>
+                    <td>200000</td>
+                </tr>
+
+                <tr >
+                    <td >total   Salary</td>
+                    <!-- <td></td> -->
+                    <td colspan="2" align="center">400000</td>
+                </tr>
+               </table>
+    
+</body>
+</html>
