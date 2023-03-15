@@ -9,11 +9,60 @@
 <body>
     <table>
 
-   Fname <input type="text"  name = "Fname" value = "kanishk">
+   Fname <input type="text"  name = "Fname" placeholder="Enter your first name">
    <br><br>
    Lname <input type="text" name = "Lname"  value = "kanishk" disabled  >
    <br><br>
+   Fname <input type="text"  name = "Fname" autofocus >
+   <br><br>
+   Fname <input type="text"  name = "Fname" minlength="4">
+   <br><br>
+   Fname <input type="text"  name = "Fname" maxlength="14">
+   <br><br>
+       
+    <label>
+
+
+        Fname <input type="text"  id="Fname">
+
+    </label>
+    <label>
+
+
+        Fname <input type="text"  for="Fname">
+        
+    </label>
+   
    <input type="submit">
+   <form>
+    <fieldset>
+        <legend>
+            Fname <input type="text"  name = "Fname" placeholder="Enter your first name">
+            <br><br>
+            Lname <input type="text" name = "Lname"  value = "kanishk" disabled  >
+            <br><br>
+            Fname <input type="text"  name = "Fname" autofocus >
+            <br><br>
+            Fname <input type="text"  name = "Fname" minlength="4">
+            <br><br>
+            Fname <input type="text"  name = "Fname" maxlength="14">
+            <br><br>
+        </legend>
+     </fieldset>
+   </form>
+
+    <form>
+   <select name="food name"> 
+    <option > Select the veg</option>
+    <option value="sdgsg" > dsfgfrg</option>
+    <option > Seldfgdfg</option>
+    <option > Select thdfgdfgd</option>
+    <option > Seledfgdfgdf</option>
+    <option > Sedfgdfg</option>
+   </select>
+</form>
+
+  
 
 
     </table>
@@ -22,6 +71,15 @@
     3. read only  - It will make the input field as read only , user cannot change value
     4. Disable - user cannot access the input field
     5. Required - It will mark the input field , if field is empty form will not be submitted
-    6. PlaceHolder - 
+    6. PlaceHolder - It is used to provide hint to the user.
+    7. AutoFocus - When page reloads respective input field will be focused
+    8. Minlength - 
+    9. Maxlnegth -  
+    10. Lable tag -  it is used to connect text with the , the text we want to connect within lable tag, we have to provide id to the input field and that id we have to pass to the lables's for attribute, when user click on that text respective input field will be focused
+    11. Field set tag is used to group form control input field and it will create 1 box around the group , conatainer tag - we have to write field set tag within form tag.
+    12. Legend Tag - it is container tag , used to provide title or caption to field set, we have write within fieldset tag 
+    13. Select list - select tag is used to create or dropdown list ,here we are provding multiple option to user from these option user can select only one value ,to create option we have option tag , conatainer tag ,the option tag we have to write within select tag.
+    
+
 </body>
 </html>
