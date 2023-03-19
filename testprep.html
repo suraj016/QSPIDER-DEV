@@ -1,0 +1,199 @@
+1.Container tags: -These are the tags that have starting and closing tags like -paragraph tag (<p>, </p>)
+2.Non container tags: -These are tags that don’t have any closing tag but have start tag like -<br>.
+
+abbr tag -  abbr tag defines an abberivaiation or an acroynm 
+                      attribute of abbr tag
+                      - title attribute is used to create tool tip
+
+
+ Code tag - The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+<p>i am a body tag</p> 
+<br>
+<code>public static void main</code>
+
+
+HTML ATTRIBUTES
+
+
+HTML attributes are special words which provide additional information about the elements or attributes are the modifier of the HTML element.
+Each element or tag can have attributes, which defines the behaviour of that element.
+Attributes should always be applied with start tag.
+The Attribute should always be applied with its name and value pair.
+The Attributes name and values are case sensitive, and it is recommended by W3C that it should be written in Lowercase only.
+You can add multiple attributes in one HTML element, but need to give space between two attributes.
+
+
+quote tag  - make the content in the quote
+     it makes a line in quote
+    <q>jai shree ram</q>
+
+
+
+    * how to embedded image in html 
+
+      requirement to embbed image 1. space, 2. path
+      path types  - absolute and relative
+
+      1. Absolute - a path with refrence to root directory is know as absolute path
+      2. Relative - the path with refrence to current directory is know as relative path
+             alt - jab tak image load nhi hoti tab tak text show karo
+
+
+      <img src="./images/wallpaperflare.com_wallpaper (4).jpg" alt="image coming" height="400px" width="600px"> 
+        non container tag
+
+       img tag is non container tag 
+       to aembedded image in html we have to follow two steps 
+       a. space - img tag
+       b. to mention path we have src attribute  
+
+
+
+
+       INLINE LEVEL ELEMENT
+       1. occupy space require by content 
+       2. we cannot set height and width 
+       3. span tag 
+
+       An inline element does not start on a new line.
+
+       An inline element only takes up as much width as necessary.
+
+       This is a <span> element inside a paragraph.
+
+
+
+       BLOCK LEVEL ELEMENT
+       1. always take full width of the container
+       2. we can set height and width
+       3. div tag
+
+       A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+       A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+       Two commonly used block elements are: <p> and <div>.
+
+       The <p> element defines a paragraph in an HTML document.
+
+       The <div> element defines a division or a section in an HTML document.
+
+       The <p> element is a block-level element.
+
+       The <div> element is a block-level element.
+
+
+
+        HYPERLINK
+
+      it is used to linked or attached differnt documents to our web page
+      STEPS TO CREATE HYPER 
+      1. TO create hyper link we have anchor tag 
+      2. we need complete path to add the path we have href attribute, here we have to mention the complete path
+      
+      anchor tag 
+      TARGET ATTRIBUTE is used to specify where to open the link  target="_blank" 
+
+     
+       <a target="_blank" href="https://en.wikipedia.org/wiki/Cat"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field." /></a>  - photo pe click kar ke uske bare mae info nikalna 
+
+
+       AUDIO TAG
+1. it is recently added in html file 
+2. it is container tag 
+3. audio tag is used to embedded audio in our web page.
+4. supported format are mp3, wav, 
+5. to mention the path we have to use source tag (non conatainer tag).
+6. in source tag we have to specify the file path in src attribute.
+7. with the help of source tag we can give multiple sources class.
+8. if any source fails browser will choose compatible path.
+9. if audio tag is not supported by browser we have to write messge between audio tag 
+
+ATTRIBUTE IF AUDIO TAG 
+1. CONTROL- it is uesd to enable control for the audio 
+2. autoplay - this attribute is used to play audio automaticvally on page load
+3. loop - this attribute is used to play audio from start when audio ends
+4. muted - it is used to mute the audio
+
+
+VIDEO TAG
+1. is recently added in html file 
+2. container tag.
+3. video tag is used to embedded in our web page 
+4. supported formats are mp4, webm, ogg, 
+5. to mention the path of the video we have to use source tag 
+6. in source tag we have to specify the file path in src attribute . 
+7. non conatainer tag.
+8. with the help of source tag we can give multiple sources.
+9. if any source fails browser will choose compatible path . 
+10. if video tag is not supported by brwoser we have to write in between video tag
+
+ATTRIBUTE IF AUDIO TAG 
+1. CONTROL- it is uesd to enable control for the audio 
+2. autoplay - this attribute is used to play audio automaticvally on page load
+3. loop - this attribute is used to play audio from start when audio ends
+4. muted - it is used to mute the audio
+5. poster - it is used to display the thumbnail our video poster = "relative path"
+
+
+DATABASE 
+1. it is recently added in html 5
+2.it is used to create suggestion list or auto complete list where option are display according to user input
+3.here we need an input field to accept user input and to create suggestion list we use datalist tag <>
+4.at last we have to connect input field with the suggestion list 
+5.in datalist tag we have to provide id and that id we have to pass to the input field list attribute
+
+in suggestion list we have to pass option as a value to the input field set 
+
+
+INPUT TYPE SUBMIT  
+1.it is a non container 
+2. it will always try to connect to the server, if server is there it will send the data
+3.it will reload the page 
+4.it will not fully compatible with java script
+5.in input submit we cannot insert image or any other content
+
+
+BUTTON TAG
+1.container tag
+2.it will not try to connect to the server
+3.it will reload the page
+4.it is fully compatible with java script
+5.in button submit we can insert image and any other content to create a button
+
+TEXT AREA 
+it is used to accept multiline input from the user
+if content is more inside the box then scroll bar automatically created inside the box 
+
+ATTRIBUTE OF TEXT AREA 
+1.rows - here rows represent no of rows in text area 
+2. cols - it represent no of coloumn in text area 
+
+IFRAME 
+1. it is inlne frame 
+it is used to open another document in our web page 
+to ebdeed another document we have iframe tag
+it is container tag 
+we have to use src attribute to mention the document Path 
+
+* NOTE - we shall not use multiple iframes in our webpage because of performance issue that is it slows down the website
+
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+    LABLE TAG - input tag ke attribures ko lable define karne ka kam karta hae
+
+    <form>
+        <label for="name"> Name: </label>
+        <input type="text" id="name" />
+  </form>
+
+
+  The <fieldset> tag is used to group related elements in a form. The <fieldset> tag draws a box around the related elements.
+
+    LEGEND TAG - field set ke group ke heading ko heading or caption
